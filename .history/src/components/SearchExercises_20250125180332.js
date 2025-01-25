@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
 const SearchExercises = () => {
-  const [search, setSearch] = useState("");
-  const handleSearch = async () => {
-    if (search) {
-    }
-  };
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
       <Typography
@@ -20,32 +15,15 @@ const SearchExercises = () => {
         <TextField
           sx={{
             input: { fontWeight: "700", border: "none", borderRadius: "4px" },
-            width: { lg: "800px", xs: "350px" },
-            backgroundColor: "#fff",
-            borderRadius: "40px",
+            width: { lg: "1170px", xs: "350" },
+            backgroundColor: "#F7F7F7",
           }}
           height="76px"
-          value={(e) => setSearch(e.target.value.toLowerCase())}
+          value=""
           onChange={(e) => {}}
           placeholder="Egzersiz Ara"
           type="text"
         />
-        <Button
-          className="search-btn"
-          sx={{
-            bgcolor: "#FF2625",
-            color: "#fff",
-            textTransform: "none",
-            width: { lg: "175px", sx: "80px" },
-            fontSize: { lg: "20px", sx: "14px" },
-            height: "56px",
-            position: "absolute",
-            right: "0",
-          }}
-          onClick={handleSearch}
-        >
-          Search
-        </Button>
       </Box>
     </Stack>
   );

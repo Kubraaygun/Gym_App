@@ -1,0 +1,14 @@
+/* HeroBanner */
+
+.banner {
+  position: relative;
+  padding: 20x;
+}
+.banner-title {
+  color: #ff2625;
+  font-weight: 600;
+  font-size: 26px;
+}
+.banner-subtitle {
+  font-weight: 700;
+}

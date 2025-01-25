@@ -1,0 +1,28 @@
+.banner {
+  margin-top: 212px;
+  margin-left: 50px;
+  padding: 20px;
+  position: relative;
+}
+.banner-small {
+  margin-top: 700px;
+}
+
+.banner-title {
+  color: #ff2625;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.banner-subtitle {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 23px;
+}
+.banner-img {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

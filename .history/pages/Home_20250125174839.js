@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { Box } from "@mui/material";
-import SearchExercises from "../components/SearchExercises";
-import Exercises from "../components/Exercises";
-import HeroBanner from "../components/HeroBanner";
-
+import HeroBanner from "../src/components/HeroBanner";
+import SearchExercises from "../src/components/SearchExercises";
+import Exercises from "../src/components/Exercises";
 const Home = () => {
   return (
     <Box>

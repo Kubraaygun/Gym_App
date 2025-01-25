@@ -1,0 +1,62 @@
+.heroBanner {
+  margin-top: 212px;
+  margin-left: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .heroBanner {
+    margin-top: 700px;
+    margin-left: 0;
+  }
+}
+
+.title {
+  color: #ff2625;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 23px;
+  margin-top: 30px;
+}
+
+@media (max-width: 1024px) {
+  .subtitle {
+    font-size: 40px;
+  }
+}
+
+.description {
+  font-size: 22px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.exploreButton {
+  background-color: #ff2625;
+  padding: 19px;
+}
+
+.watermark {
+  font-weight: 600;
+  color: #ff2625;
+  opacity: 0.1;
+  font-size: 200px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .watermark {
+    display: none;
+  }
+}
+
+.bannerImage {
+  width: 100%;
+  max-width: 100%;
+}

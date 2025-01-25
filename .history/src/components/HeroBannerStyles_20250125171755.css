@@ -1,0 +1,22 @@
+.hero-banner {
+  margin-top: 212px;
+  margin-left: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.hero-banner-small {
+  margin-top: 700px;
+}
+
+.hero-banner-title {
+  color: #ff2625;
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.hero-banner-subtitle {
+  font-weight: 700;
+  font-size: 44px;
+  margin-bottom: 23px;
+}

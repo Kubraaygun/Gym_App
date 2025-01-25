@@ -5,7 +5,8 @@ import HeroBannerImage from "../assets/images/banner.png";
 const HeroBanner = () => {
   return (
     <Box
-      sx={{ mt: { lg: "212px", sx: "70px" }, ml: { sm: "50px" } }}
+      className="banner"
+      sx={{ mt: { lg: "212px", sx: "700px" }, ml: { sm: "50px" } }}
       position="relative"
       p="20px"
     >
@@ -27,7 +28,7 @@ const HeroBanner = () => {
         variant="contained"
         color="error"
         href="#exercises"
-        sx={{ backgroundColor: "#ff2625", padding: "10px" }}
+        sx={{ backgroundColor: "#ff2625", padding: "19px" }}
       >
         Egzersiz keşfedin
       </Button>
