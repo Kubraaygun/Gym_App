@@ -7,12 +7,7 @@ const Navbar = () => {
     <Stack
       direction="row"
       justifyContent="space-around"
-      sx={{
-        gap: { sm: "122px", sx: "40px" },
-        mt: { sm: "32px", xs: "20px" },
-        justifyContent: "none",
-      }}
-      px="20px"
+      sx={{ gap: { sm: "12px", sx: "40px" } }}
     >
       <Link>
         <img
