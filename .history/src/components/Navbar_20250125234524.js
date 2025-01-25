@@ -14,7 +14,7 @@ const Navbar = () => {
       }}
       px="20px"
     >
-      <Link to="/">
+      <Link>
         <img
           src={Logo}
           alt="logo"

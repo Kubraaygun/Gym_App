@@ -7,7 +7,7 @@ const SearchExercises = () => {
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises",
+        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
         exerciseOptions
       );
       console.log("Fetched data:", exercisesData);
@@ -43,11 +43,11 @@ const SearchExercises = () => {
             bgcolor: "#FF2625",
             color: "#fff",
             textTransform: "none",
-            width: { lg: "173px", xs: "80px" },
+            width: { lg: "175px", sx: "80px" },
+            fontSize: { lg: "20px", sx: "14px" },
             height: "56px",
             position: "absolute",
-            right: "0px",
-            fontSize: { lg: "20px", xs: "14px" },
+            right: "0",
           }}
           onClick={handleSearch}
         >
