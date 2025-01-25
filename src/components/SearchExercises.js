@@ -1,9 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Box, Button, Stack, TextField, Typography } from "@mui/material";
+import { exerciseOptions, fetchData } from "../utils/fetchData";
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
+
   const handleSearch = async () => {
     if (search) {
+      const exercisesData = await fetchData(
+        "https://exercisedb.p.rapidapi.com/exercises",
+        exerciseOptions
+      );
+      console.log("Fetched data:", exercisesData);
     }
   };
   return (
@@ -24,9 +31,9 @@ const SearchExercises = () => {
             backgroundColor: "#fff",
             borderRadius: "40px",
           }}
+          value={search}
           height="76px"
-          value={(e) => setSearch(e.target.value.toLowerCase())}
-          onChange={(e) => {}}
+          onChange={(e) => setSearch(e.target.value.toLowerCase())}
           placeholder="Egzersiz Ara"
           type="text"
         />
@@ -36,11 +43,11 @@ const SearchExercises = () => {
             bgcolor: "#FF2625",
             color: "#fff",
             textTransform: "none",
-            width: { lg: "175px", sx: "80px" },
-            fontSize: { lg: "20px", sx: "14px" },
+            width: { lg: "173px", xs: "80px" },
             height: "56px",
             position: "absolute",
-            right: "0",
+            right: "0px",
+            fontSize: { lg: "20px", xs: "14px" },
           }}
           onClick={handleSearch}
         >
