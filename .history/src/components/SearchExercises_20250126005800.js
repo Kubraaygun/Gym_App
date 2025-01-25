@@ -14,7 +14,6 @@ const SearchExercises = () => {
       );
       setBodyParts(["all", ...bodyPartsData]);
     };
-    fetchExercisesData();
   }, []);
 
   const handleSearch = async () => {
@@ -75,10 +74,6 @@ const SearchExercises = () => {
         >
           Search
         </Button>
-      </Box>
-
-      <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
-        <HorizontalScrollBar data={bodyParts} />
       </Box>
     </Stack>
   );

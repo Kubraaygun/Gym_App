@@ -4,7 +4,6 @@ import { exerciseOptions, fetchData } from "../utils/fetchData";
 const SearchExercises = () => {
   const [search, setSearch] = useState("");
   const [exercises, setExercises] = useState([]);
-  const [bodyParts, setBodyParts] = useState([]);
 
   useEffect(() => {
     const fetchExercisesData = async () => {
@@ -14,7 +13,6 @@ const SearchExercises = () => {
       );
       setBodyParts(["all", ...bodyPartsData]);
     };
-    fetchExercisesData();
   }, []);
 
   const handleSearch = async () => {
@@ -75,10 +73,6 @@ const SearchExercises = () => {
         >
           Search
         </Button>
-      </Box>
-
-      <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
-        <HorizontalScrollBar data={bodyParts} />
       </Box>
     </Stack>
   );
