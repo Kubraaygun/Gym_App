@@ -75,7 +75,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           }}
           onClick={handleSearch}
         >
-          Search
+          Ara
         </Button>
       </Box>
 
