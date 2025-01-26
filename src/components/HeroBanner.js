@@ -18,10 +18,16 @@ const HeroBanner = () => {
         mb="23px"
         mt="30px"
         color={"#3A1212"}
+        fontFamily="Alegreya"
       >
         Gülümse ve <br /> ve Tekrar Et
       </Typography>
-      <Typography fontSize="22px" lineHeight="35px" mb={3}>
+      <Typography
+        fontSize="22px"
+        lineHeight="35px"
+        mb={3}
+        fontFamily="Alegreya"
+      >
         En etkili egzersizleri inceleyin
       </Typography>
       <Button

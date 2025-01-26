@@ -30,7 +30,7 @@ const Navbar = () => {
             borderBottom: "3px solid #FF2625",
           }}
         >
-          Home
+          Anasayfa
         </Link>
         <a
           href="#exercises"
@@ -39,7 +39,7 @@ const Navbar = () => {
             color: "#3A1212",
           }}
         >
-          Exercises
+          Egzersizler
         </a>
       </Stack>
     </Stack>
