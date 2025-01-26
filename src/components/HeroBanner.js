@@ -17,6 +17,7 @@ const HeroBanner = () => {
         sx={{ fontSize: { lg: "44px", sx: "40px" } }}
         mb="23px"
         mt="30px"
+        color={"#3A1212"}
       >
         Gülümse ve <br /> ve Tekrar Et
       </Typography>
