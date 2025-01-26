@@ -13,7 +13,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       justifyContent="center"
       className="bodyPart-card"
       sx={
-        bodyPart === item
+        bodyPart === item.id
           ? {
               borderTop: "4px solid #FF2625",
               background: "#fff",
@@ -32,10 +32,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
               gap: "47px",
             }
       }
-      onClick={() => {
-        setBodyPart(item);
-        window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
-      }}
+      onClick={() => setBodyPart(item)}
     >
       <img
         src={iconPath}

@@ -8,7 +8,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
   const iconPath = iconGymList[iconName] || iconGymList.all;
   return (
     <Stack
-      type="button"
+      component="button"
       alignItems="center"
       justifyContent="center"
       className="bodyPart-card"

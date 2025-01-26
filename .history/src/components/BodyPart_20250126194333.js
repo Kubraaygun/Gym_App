@@ -20,7 +20,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
               borderBottomLeftRadius: "20px",
               width: "270px",
               height: "282px",
-              cursor: "pointer",
+              cursor: "pointer"
               gap: "47px",
             }
           : {

@@ -39,14 +39,13 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
     >
       <img
         src={iconPath}
-        alt="dumbbell"
+        alt={item}
         style={{ width: "40px", height: "40px" }}
       />
       <Typography
         fontSize="24px"
         fontWeight={"bold"}
         color={"#3A1212"}
-        fontFamily="Alegreya"
         textTransform={"capitalize"}
       >
         {item}

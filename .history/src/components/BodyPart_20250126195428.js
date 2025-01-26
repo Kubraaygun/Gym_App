@@ -13,7 +13,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
       justifyContent="center"
       className="bodyPart-card"
       sx={
-        bodyPart === item
+        bodyPart === !item.id
           ? {
               borderTop: "4px solid #FF2625",
               background: "#fff",
@@ -33,7 +33,7 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
             }
       }
       onClick={() => {
-        setBodyPart(item);
+        setBodyPart(item.id);
         window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
       }}
     >
