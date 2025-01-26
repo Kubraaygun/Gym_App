@@ -42,6 +42,16 @@ const Navbar = () => {
         >
           Egzersizler
         </a>
+        {/* Çeviri Sayfası Linki */}
+        <Link
+          to="/translate"
+          style={{
+            textDecoration: "none",
+            color: "#3A1212",
+          }}
+        >
+          Çeviri
+        </Link>
       </Stack>
     </Stack>
   );
