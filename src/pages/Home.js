@@ -8,6 +8,8 @@ const Home = () => {
   // Kullanıcıya gösterilecek egzersizleri ve vücut bölgesini yönetmek için state'ler
   const [bodyPart, setBodyPart] = useState("all"); // Başlangıçta tüm vücut bölgesi seçili
   const [exercises, setExercises] = useState([]); // Arama sonuçları olan egzersizleri tutar
+
+  console.log(bodyPart);
   return (
     <Box>
       <HeroBanner />
