@@ -19,7 +19,6 @@ const ExerciseDetail = () => {
         `${exerciseDbUrl}/exercises/${id}`,
         exerciseOptions
       );
-      setExerciseDetail(exerciseDetailData);
     };
     fetchExercisesData();
   }, [id]);
