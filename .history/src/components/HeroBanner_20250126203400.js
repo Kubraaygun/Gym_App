@@ -22,12 +22,7 @@ const HeroBanner = () => {
       >
         Gülümse ve <br /> ve Tekrar Et
       </Typography>
-      <Typography
-        fontSize="22px"
-        lineHeight="35px"
-        mb={3}
-        fontFamily="Alegreya"
-      >
+      <Typography fontSize="22px" lineHeight="35px" mb={3}>
         En etkili egzersizleri inceleyin
       </Typography>
       <Button

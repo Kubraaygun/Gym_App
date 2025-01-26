@@ -29,20 +29,9 @@ const ExerciseCard = ({ exercise }) => {
             textTransform: "capitalize",
           }}
         >
-          {exercise.target}
+          {exercise.bodyPart}
         </Button>
       </Stack>
-      <Typography
-        ml="21px"
-        color="#000"
-        textTransform="capitalize"
-        fontWeight="bold"
-        mt="11px"
-        pb="10px"
-        fontSize="24px"
-      >
-        {exercise.name}
-      </Typography>
     </Link>
   );
 };

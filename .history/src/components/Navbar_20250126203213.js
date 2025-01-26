@@ -13,6 +13,7 @@ const Navbar = () => {
         justifyContent: "none",
       }}
       px="20px"
+      fontFamily="Alegreya"
     >
       <Link to="/">
         <img
@@ -30,7 +31,7 @@ const Navbar = () => {
             borderBottom: "3px solid #FF2625",
           }}
         >
-          Anasayfa
+          Home
         </Link>
         <a
           href="#exercises"
@@ -39,7 +40,7 @@ const Navbar = () => {
             color: "#3A1212",
           }}
         >
-          Egzersizler
+          Exercises
         </a>
       </Stack>
     </Stack>

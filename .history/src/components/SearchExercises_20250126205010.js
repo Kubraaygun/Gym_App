@@ -10,7 +10,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       const bodyPartsData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises/bodyPartList",
+        "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
       );
       setBodyParts(["all", ...bodyPartsData]);
@@ -21,11 +21,11 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   const handleSearch = async () => {
     if (search) {
       const exercisesData = await fetchData(
-        "https://exercisedb.p.rapidapi.com/exercises?limit=1000",
+        "https://exercisedb.p.rapidapi.com/exercises",
         exerciseOptions
       );
       const searchedExercises = exercisesData.filter(
-        (item) =>
+        (exercise) => (item) =>
           item.name.toLowerCase().includes(search) ||
           item.target.toLowerCase().includes(search) ||
           item.equipment.toLowerCase().includes(search) ||
@@ -44,6 +44,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         mb="50px"
         textAlign="center"
         color={"#3A1212"}
+        fontFamily="Alegreya"
       >
         Bilmeniz Gereken <br /> Harika Egzersizler
       </Typography>

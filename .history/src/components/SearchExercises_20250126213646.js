@@ -30,7 +30,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           item.target.toLowerCase().includes(search) ||
           item.equipment.toLowerCase().includes(search) ||
           item.bodyPart.toLowerCase().includes(search)
-      );
+      ); // Tüm egzersizleri getir
       window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
       setSearch("");
       setExercises(searchedExercises);

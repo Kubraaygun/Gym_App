@@ -39,7 +39,7 @@ const Navbar = () => {
             color: "#3A1212",
           }}
         >
-          Egzersizler
+          Exercises
         </a>
       </Stack>
     </Stack>

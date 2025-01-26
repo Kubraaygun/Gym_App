@@ -33,13 +33,14 @@ const ExerciseCard = ({ exercise }) => {
         </Button>
       </Stack>
       <Typography
-        ml="21px"
-        color="#000"
-        textTransform="capitalize"
-        fontWeight="bold"
-        mt="11px"
-        pb="10px"
-        fontSize="24px"
+        sx={{
+          ml: "21px",
+          color: "#000",
+          textTransform: "capitalize",
+          fontWeight: "bold",
+          mt: "11px",
+          pb: "10px",
+        }}
       >
         {exercise.name}
       </Typography>

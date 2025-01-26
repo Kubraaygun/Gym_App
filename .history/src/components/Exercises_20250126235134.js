@@ -9,7 +9,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
+  const curretExercise = exercises.slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );
@@ -34,7 +34,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap={"wrap"}
         justifyContent={"center"}
       >
-        {currentExercises.map((exercise, index) => (
+        {exercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
