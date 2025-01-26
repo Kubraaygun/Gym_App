@@ -1,0 +1,11 @@
+/* src/styles/horizontal-scroll.css */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.scroll-item {
+  flex: 0 0 auto;
+  margin: 0 20px;
+}
