@@ -11,11 +11,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         color="#000"
         mb="33px"
       >
-        Aynı{" "}
-        <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
-          Kas Grubunu
-        </span>{" "}
-        Hedef Alan Egzersizler
+        Aynı Kas Grubunu Hedef Alan Egzersizler
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {targetMuscleExercises.length ? (
@@ -31,12 +27,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         color="#000"
         mb="33px"
       >
-        Aynı{" "}
-        <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
-          {" "}
-          Ekipmanı{" "}
-        </span>{" "}
-        Kullanan Egzersizler
+        Aynı Ekipmanı Kullanan Egzersizler
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {equipmentExercises.length ? (
