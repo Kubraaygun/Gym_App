@@ -13,15 +13,12 @@ const ExerciseDetail = () => {
 
   useEffect(() => {
     const fetchExercisesData = async () => {
-      const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
-      const youtubeSearchUrl =
-        "https://youtube-search-and-download.p.rapidapi.com";
+      const exerciseDbUrl = "https://exercisedb.p.rapidapi.com/";
 
       const exerciseDetailData = await fetchData(
         `${exerciseDbUrl}/exercises/exercise/${id}`,
         exerciseOptions
       );
-      console.log(exerciseDetailData); // Veriyi kontrol et
       setExerciseDetail(exerciseDetailData);
     };
     fetchExercisesData();
@@ -30,7 +27,10 @@ const ExerciseDetail = () => {
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />
-      <ExerciseVideos />
+      <ExerciseVideos
+        exerciseVideos={exerciseVideos}
+        name={exerciseDetail.name}
+      />
       <SimilarExercises />
     </Box>
   );

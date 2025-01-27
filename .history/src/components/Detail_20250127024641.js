@@ -6,15 +6,8 @@ import BodyPartImage from "../assets/icons/body-part.png";
 import TargetImage from "../assets/icons/target.png";
 import EquipmentImage from "../assets/icons/equipment.png";
 const Detail = ({ exerciseDetail }) => {
-  const { BodyPart, gifUrl, name, target, equipment } = exerciseDetail;
-  return (
-    <Stack
-      gap="60px"
-      sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
-    >
-      <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
-    </Stack>
-  );
+  const {} = exerciseDetail;
+  return <div>Detail</div>;
 };
 
 export default Detail;
