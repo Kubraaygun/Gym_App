@@ -5,9 +5,8 @@ import Exercises from "../components/Exercises";
 import HeroBanner from "../components/HeroBanner";
 
 const Home = () => {
-  // Kullanıcıya gösterilecek egzersizleri ve vücut bölgesini yönetmek için state'ler
-  const [bodyPart, setBodyPart] = useState("all"); // Başlangıçta tüm vücut bölgesi seçili
-  const [exercises, setExercises] = useState([]); // Arama sonuçları olan egzersizleri tutar
+  const [bodyPart, setBodyPart] = useState("all");
+  const [exercises, setExercises] = useState([]);
 
   console.log(bodyPart);
   return (
