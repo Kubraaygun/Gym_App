@@ -34,13 +34,13 @@ const ExerciseDetail = () => {
       setExerciseVideos(exerciseVideosData.contents);
 
       const targetMuscleExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`,
+        `${exerciseDbUrl}/exercises/target${exerciseDetailData.target}`,
         exerciseOptions
       );
       setTargetMuscleExercises(targetMuscleExercisesData);
 
       const equipmenteExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`,
+        `${exerciseDbUrl}/exercises/equipment${exerciseDetailData.equipment}`,
         exerciseOptions
       );
       setEquipmentExercises(equipmenteExercisesData);

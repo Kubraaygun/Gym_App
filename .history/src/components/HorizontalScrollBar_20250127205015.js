@@ -26,14 +26,7 @@ const RightArrow = () => {
   );
 };
 
-const HorizontalScrollBar = ({ data, isBodyParts, bodyPart, setBodyPart }) => {
-  if (!data || !Array.isArray(data)) {
-    console.error(
-      "HorizontalScrollBar bileşenine yanlış veri gönderildi:",
-      data
-    );
-    return null; // Hata durumunda bileşeni render etme
-  }
+const HorizontalScrollBar = ({ data, bodyPart, setBodyPart isBodyParts }) => {
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
       {data.map((item) => (
@@ -43,15 +36,7 @@ const HorizontalScrollBar = ({ data, isBodyParts, bodyPart, setBodyPart }) => {
           title={item.id || item}
           m="0 40px"
         >
-          {isBodyParts ? (
-            <BodyPart
-              item={item}
-              bodyPart={bodyPart}
-              setBodyPart={setBodyPart}
-            />
-          ) : (
-            <ExerciseCard exercise={item} />
-          )}
+          <BodyPart item={item} bodyPart={bodyPart} setBodyPart={setBodyPart} />
         </Box>
       ))}
     </ScrollMenu>

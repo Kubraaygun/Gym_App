@@ -15,7 +15,6 @@ const ExerciseDetail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
     const fetchExercisesData = async () => {
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
       const youtubeSearchUrl =
@@ -34,16 +33,16 @@ const ExerciseDetail = () => {
       setExerciseVideos(exerciseVideosData.contents);
 
       const targetMuscleExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`,
+        `${exerciseDbUrl}/exercises/target${exerciseDetailData.target}`,
         exerciseOptions
       );
       setTargetMuscleExercises(targetMuscleExercisesData);
 
       const equipmenteExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`,
+        `${exerciseDbUrl}/exercises/equipment${exerciseDetailData.equipment}`,
         exerciseOptions
       );
-      setEquipmentExercises(equipmenteExercisesData);
+      setEquipment(equipmenteExercisesData);
     };
 
     fetchExercisesData();

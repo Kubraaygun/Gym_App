@@ -9,13 +9,9 @@ import Detail from "../components/Detail";
 const ExerciseDetail = () => {
   const [exerciseDetail, setExerciseDetail] = useState({});
   const [exerciseVideos, setExerciseVideos] = useState([]);
-  const [targetMuscleExercises, setTargetMuscleExercises] = useState([]);
-  const [equipmentExercises, setEquipmentExercises] = useState([]);
-
   const { id } = useParams();
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
     const fetchExercisesData = async () => {
       const exerciseDbUrl = "https://exercisedb.p.rapidapi.com";
       const youtubeSearchUrl =
@@ -28,38 +24,19 @@ const ExerciseDetail = () => {
       setExerciseDetail(exerciseDetailData);
 
       const exerciseVideosData = await fetchData(
-        `${youtubeSearchUrl}/search?query=${exerciseDetailData.name}`,
+        `${youtubeSearchUrl}/search?q=${exerciseDetailData.name}`,
         youtubeOptions
       );
-      setExerciseVideos(exerciseVideosData.contents);
-
-      const targetMuscleExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/target/${exerciseDetailData.target}`,
-        exerciseOptions
-      );
-      setTargetMuscleExercises(targetMuscleExercisesData);
-
-      const equipmenteExercisesData = await fetchData(
-        `${exerciseDbUrl}/exercises/equipment/${exerciseDetailData.equipment}`,
-        exerciseOptions
-      );
-      setEquipmentExercises(equipmenteExercisesData);
+      setExerciseVideos(exerciseVideosData);
     };
-
     fetchExercisesData();
   }, [id]);
 
   return (
     <Box>
       <Detail exerciseDetail={exerciseDetail} />
-      <ExerciseVideos
-        exerciseVideos={exerciseVideos}
-        name={exerciseDetail.name}
-      />
-      <SimilarExercises
-        targetMuscleExercises={targetMuscleExercises}
-        equipmentExercises={equipmentExercises}
-      />
+      <ExerciseVideos />
+      <SimilarExercises />
     </Box>
   );
 };
