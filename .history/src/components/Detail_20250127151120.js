@@ -33,8 +33,10 @@ const Detail = ({ exerciseDetail }) => {
         </Typography>
         <Typography variant="h6">
           Egzersiz sizi güçlü tutar. {``}
-          <br /> <span style={{ textTransform: "capitalize" }}>{name}</span> En
-          iyilerden biridir. <br /> Hedefinize yönelik egzersizler: {target}.
+          <span style={{ textTransform: "capitalize" }}>
+            {name}
+          </span> <br /> En iyilerden biridir. <br /> Hedefinize yönelik
+          egzersizler: {target}.
           <br /> Bu sizin geliştirmenize yardımcı olacaktır. <br /> Ruh halinizi
           düzeltin ve enerji kazanın.
         </Typography>

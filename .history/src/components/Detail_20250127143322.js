@@ -32,13 +32,13 @@ const Detail = ({ exerciseDetail }) => {
           {name}
         </Typography>
         <Typography variant="h6">
-          Egzersiz sizi güçlü tutar. {``}
-          <br /> <span style={{ textTransform: "capitalize" }}>{name}</span> En
-          iyilerden biridir. <br /> Hedefinize yönelik egzersizler: {target}.
-          <br /> Bu sizin geliştirmenize yardımcı olacaktır. <br /> Ruh halinizi
-          düzeltin ve enerji kazanın.
+          Egzersiz sizi güçlü tutar.{``}
+          <span style={{ textTransform: "capitalize" }}>{name}</span> bup en
+          iyilerden biridir <br /> hedefinize yönelik egzersizler {target}. Bu,
+          sizin geliştirmenize yardımcı olacaktır. <br /> Ruh halinizi düzeltin
+          ve enerji kazanın.
         </Typography>
-        {extraDetail?.map((item) => (
+        {extraDetail.map((item) => (
           <Stack
             key={item.name}
             direction={"row"}
