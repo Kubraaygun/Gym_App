@@ -5,8 +5,17 @@ import Loader from "./Loader";
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
     <Box sx={{ mt: { lg: "100px", xs: "0" } }}>
-      <Typography variant="h3" mb={5}>
-        Exercises that target the same muscle group
+      <Typography
+        sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
+        fontWeight={700}
+        color="#000"
+        mb="33px"
+      >
+        Aynı{" "}
+        <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+          Kas Grubunu
+        </span>{" "}
+        Hedef Alan Egzersizler
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {targetMuscleExercises.length ? (
@@ -16,8 +25,18 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         )}
       </Stack>
 
-      <Typography variant="h3" mb={5}>
-        Exercises taht use the same equipment
+      <Typography
+        sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
+        fontWeight={700}
+        color="#000"
+        mb="33px"
+      >
+        Aynı{" "}
+        <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+          {" "}
+          Ekipmanı{" "}
+        </span>{" "}
+        Kullanan Egzersizler
       </Typography>
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {equipmentExercises.length ? (
