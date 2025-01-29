@@ -10,7 +10,7 @@ const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
 
   return (
-    <Typography onClick={() => scrollPrev()} className="left-arrow">
+    <Typography onClick={() => scrollPrev()} className="right-arrow">
       <img src={LeftArrowIcon} alt="left-arrow" />
     </Typography>
   );
@@ -20,7 +20,7 @@ const RightArrow = () => {
   const { scrollNext } = useContext(VisibilityContext);
 
   return (
-    <Typography onClick={() => scrollNext()} className="right-arrow">
+    <Typography onClick={() => scrollNext()} className="left-arrow">
       <img src={RightArrowIcon} alt="right-arrow" />
     </Typography>
   );

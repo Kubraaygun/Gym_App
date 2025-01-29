@@ -27,3 +27,5 @@ Projede React ve RapidAPI gibi modern teknolojiler kullanılarak, kullanıcı do
 - Youtube API
 
 ## Ekran Görüntüsü
+
+![](./src/assets/gif/gym.gif)
