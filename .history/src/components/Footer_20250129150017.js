@@ -4,11 +4,11 @@ import { Box, Stack, Typography } from "@mui/material";
 import { Height } from "@mui/icons-material";
 const Footer = () => {
   return (
-    <Box mt="50px" bgcolor="#fff3f4">
-      <Stack gap="10px" alignItems={"center"} px={"40px"} pt={"24px"}>
+    <Box mt="80px" bgcolor="#fff3f4">
+      <Stack gap="40px" alignItems={"center"} px={"40px"} pt={"24px"}>
         <img src={Logo} alt="logo" width="200px" height="150px" />
-        <Typography variant="h5" pb="20px" fontFamily="Alegreya">
-          Sağlıklı Yaşa, Güçlü Kal!
+        <Typography variant="h5" pb="40px" fontFamily="Alegreya" mt="40px">
+          Sağlıklı Yaşa, Güçlü Kal! 🏋️
         </Typography>
       </Stack>
     </Box>

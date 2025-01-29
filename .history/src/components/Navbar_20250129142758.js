@@ -11,7 +11,7 @@ const Navbar = () => {
       sx={{
         gap: { sm: "122px", sx: "40px" },
         mt: { sm: "32px", xs: "20px" },
-        justifyContent: "none",
+        justifyContent: "center",
       }}
       px="20px"
     >
@@ -22,7 +22,6 @@ const Navbar = () => {
           style={{
             width: "70px",
             height: "70px",
-
             margin: "0 20px",
           }}
         />

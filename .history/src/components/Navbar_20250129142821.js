@@ -20,9 +20,10 @@ const Navbar = () => {
           src={Logo}
           alt="logo"
           style={{
+            justifyContent: "center",
+            alignItems:'center'
             width: "70px",
             height: "70px",
-
             margin: "0 20px",
           }}
         />

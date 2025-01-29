@@ -22,8 +22,8 @@ const Navbar = () => {
           style={{
             width: "70px",
             height: "70px",
-
             margin: "0 20px",
+            alignItems: "center",
           }}
         />
       </Link>

@@ -20,9 +20,10 @@ const Navbar = () => {
           src={Logo}
           alt="logo"
           style={{
+            backgroundColor: "black",
             width: "70px",
             height: "70px",
-
+            bottom: "0",
             margin: "0 20px",
           }}
         />

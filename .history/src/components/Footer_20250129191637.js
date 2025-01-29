@@ -5,8 +5,8 @@ import { Height } from "@mui/icons-material";
 const Footer = () => {
   return (
     <Box mt="50px" bgcolor="#fff3f4">
-      <Stack gap="10px" alignItems={"center"} px={"40px"} pt={"24px"}>
-        <img src={Logo} alt="logo" width="200px" height="150px" />
+      <Stack gap="40px" alignItems={"center"} px={"40px"} pt={"24px"}>
+        <img src={Logo} alt="logo" width="200px" height="180px" />
         <Typography variant="h5" pb="20px" fontFamily="Alegreya">
           Sağlıklı Yaşa, Güçlü Kal!
         </Typography>
