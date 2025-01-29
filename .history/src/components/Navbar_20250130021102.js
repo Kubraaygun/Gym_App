@@ -4,7 +4,7 @@ import { Stack } from "@mui/material";
 import Logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
-  const location = useLocation(); // Use useLocation to get the location of the current URL
+  const location = useLocation(); //// Use useLocation to get the location of the current URL
 
   return (
     <Stack

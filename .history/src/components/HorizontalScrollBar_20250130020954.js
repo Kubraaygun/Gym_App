@@ -25,7 +25,6 @@ const RightArrow = () => {
     </Typography>
   );
 };
-// Horizontal scrollbar component
 
 const HorizontalScrollBar = ({ data, isBodyParts, bodyPart, setBodyPart }) => {
   if (!data || !Array.isArray(data)) {

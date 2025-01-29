@@ -66,7 +66,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
-      {/* Pagination, show if number of exercises is more than 9 */}
+
       <Stack mt="100px" alignItems={"center"}>
         {exercises.length > 9 && (
           <Pagination

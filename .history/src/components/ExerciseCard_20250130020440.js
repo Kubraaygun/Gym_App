@@ -35,7 +35,6 @@ const ExerciseCard = ({ exercise }) => {
           {exercise.target}
         </Button>
       </Stack>
-      {/* Exercise name */}
       <Typography
         ml="21px"
         color="#000"

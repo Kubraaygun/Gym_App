@@ -55,12 +55,12 @@ const ExerciseDetail = () => {
 
   return (
     <Box>
+      {/* Exercise details*/}
       <Detail exerciseDetail={exerciseDetail} />
       <ExerciseVideos
         exerciseVideos={exerciseVideos}
         name={exerciseDetail.name}
       />
-      {/* Show similar exercises */}
       <SimilarExercises
         targetMuscleExercises={targetMuscleExercises}
         equipmentExercises={equipmentExercises}

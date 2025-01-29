@@ -47,8 +47,6 @@ const Detail = ({ exerciseDetail }) => {
           <br /> Bu sizin geliştirmenize yardımcı olacaktır. <br /> Ruh halinizi
           düzeltin ve enerji kazanın.
         </Typography>
-
-        {/* We add extra details with map */}
         {extraDetail?.map((item) => (
           <Stack
             key={item.name}

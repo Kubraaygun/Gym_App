@@ -82,7 +82,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           Ara
         </Button>
       </Box>
-      {/* BodyParts bölgesi */}
+
       <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
         <HorizontalScrollBar
           data={bodyParts}

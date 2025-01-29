@@ -35,7 +35,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
-      // Verilerin geçerli bir dizi olduğundan emin olunuyor
+
       if (Array.isArray(exercisesData)) {
         setExercises(exercisesData);
       } else {
@@ -61,12 +61,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap={"wrap"}
         justifyContent={"center"}
       >
-        {/* Egzersizleri listele */}
         {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
-      {/* Pagination, show if number of exercises is more than 9 */}
+
       <Stack mt="100px" alignItems={"center"}>
         {exercises.length > 9 && (
           <Pagination

@@ -25,7 +25,7 @@ const Navbar = () => {
         />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
-        {location.pathname === "/" && (
+        {location.pathname === "/" && ( // If we are on the home page
           <Link
             to="/"
             style={{

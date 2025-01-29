@@ -28,7 +28,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
           <Loader />
         )}
       </Stack>
-      {/* Exercises with equipment title */}
+
       <Typography
         sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
         fontWeight={700}
@@ -42,7 +42,6 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </span>{" "}
         Kullanan Egzersizler
       </Typography>
-      {/* List of exercises with equipment */}
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {equipmentExercises.length ? (
           <HorizontalScrollBar data={equipmentExercises} />

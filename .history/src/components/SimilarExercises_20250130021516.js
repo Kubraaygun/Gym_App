@@ -42,7 +42,6 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </span>{" "}
         Kullanan Egzersizler
       </Typography>
-      {/* List of exercises with equipment */}
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {equipmentExercises.length ? (
           <HorizontalScrollBar data={equipmentExercises} />
