@@ -23,15 +23,7 @@ const Detail = ({ exerciseDetail }) => {
   return (
     <Stack
       gap="60px"
-      sx={{
-        flexDirection: { lg: "row" },
-        p: "20px",
-        alignItems: "center",
-        justifyContent: "center", // Ortalamayı ekliyoruz
-        width: "100%", // Genişliği tam olarak ayarlıyoruz
-        maxWidth: "3200px", // Maksimum genişlik 3200px
-        margin: "0 auto", // Ortalamak için margin auto
-      }}
+      sx={{ flexDirection: { lg: "row" }, p: "20px", alignItems: "center" }}
     >
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
