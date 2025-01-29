@@ -24,7 +24,14 @@ Projede React ve RapidAPI gibi modern teknolojiler kullanılarak, kullanıcı do
 - Mateirl UI
 - React Router DOM
 - RapidAPI
-- Youtube API
+
+## Bağımlılıklar
+
+- react
+- @mui/material
+- react-router-dom
+- react-loader-spinner
+- react-horizontal-scrolling-menu
 
 ## Ekran Görüntüsü
 
