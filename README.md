@@ -1,14 +1,14 @@
-## Spor Uygulama Projesi
+# Spor Uygulama Projesi
 
 Bu proje, kullanıcılara farklı egzersizleri arama, görüntüleme ve detaylı bilgilerini alma imkânı sağlayan bir React Frontend uygulamasıdır.
 
-# Proje Amacı
+## Proje Amacı
 
 Projenin temel amacı, kullanıcıların egzersizleri kolayca keşfetmelerini ve egzersizlerin nasıl yapıldığını daha iyi anlamalarını sağlamaktır. Kullanıcılar aradıkları egzersizleri filtreleyebilir, detaylı bilgi alabilir ve egzersizlerle ilgili video içerikleri izleyebilirler.
 
 Projede React ve RapidAPI gibi modern teknolojiler kullanılarak, kullanıcı dostu bir arayüz ve hızlı veri erişimi sağlanmıştır. Ayrıca, YouTube API ile videoların entegrasyonu, kullanıcıların egzersizleri daha iyi öğrenmesini ve doğru şekilde uygulamalarını hedeflemiştir.
 
-# Özellikler
+## Özellikler
 
 - **Egzersiz Arama ve Filtreleme:** Kullanıcılar, egzersizleri isim, hedef kas grubu, ekipman türü ve diğer kriterlere göre arayabilir.
 
@@ -18,10 +18,12 @@ Projede React ve RapidAPI gibi modern teknolojiler kullanılarak, kullanıcı do
 
 - **Responsive Tasarım:** Uygulama, mobil cihazlarda da uyumlu çalışacak şekilde tasarlanmıştır.
 
-# Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 - React
 - Mateirl UI
 - React Router DOM
 - RapidAPI
 - Youtube API
+
+## Ekran Görüntüsü

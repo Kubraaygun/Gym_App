@@ -34,7 +34,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
-      setExercises(exercisesData);
+
+      if (Array.isArray(exercisesData)) {
+        setExercises(exercisesData);
+      } else {
+        console.error("Fetched data is not an array", exercisesData);
+      }
     };
     fetchExercisesData();
   }, [bodyPart, setExercises]);

@@ -25,17 +25,18 @@ const Navbar = () => {
         />
       </Link>
       <Stack direction="row" gap="40px" fontSize="24px" alignItems="flex-end">
-        <Link
-          to="/"
-          style={{
-            textDecoration: "none",
-            color: "#3A1212",
-            borderBottom:
-              location.pathname === "/" ? "3px solid #FF2625" : "none",
-          }}
-        >
-          Anasayfa
-        </Link>
+        {location.pathname === "/" && (
+          <Link
+            to="/"
+            style={{
+              textDecoration: "none",
+              color: "#3A1212",
+              borderBottom: "3px solid #FF2625",
+            }}
+          >
+            Anasayfa
+          </Link>
+        )}
         {location.pathname === "/" && (
           <a
             href="#exercises"

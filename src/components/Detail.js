@@ -27,10 +27,10 @@ const Detail = ({ exerciseDetail }) => {
         flexDirection: { lg: "row" },
         p: "20px",
         alignItems: "center",
-        justifyContent: "center", // Ortalamayı ekliyoruz
-        width: "100%", // Genişliği tam olarak ayarlıyoruz
-        maxWidth: "3200px", // Maksimum genişlik 3200px
-        margin: "0 auto", // Ortalamak için margin auto
+        justifyContent: "center",
+        width: "100%",
+        maxWidth: "3200px",
+        margin: "0 auto",
       }}
     >
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
