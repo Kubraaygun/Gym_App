@@ -36,7 +36,6 @@ const Navbar = () => {
           >
             Anasayfa
           </Link>
-        )}
         {location.pathname === "/" && (
           <a
             href="#exercises"

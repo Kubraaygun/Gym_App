@@ -34,6 +34,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
+      console.log(exercisesData);
 
       if (Array.isArray(exercisesData)) {
         setExercises(exercisesData);

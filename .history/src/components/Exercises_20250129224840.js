@@ -33,14 +33,13 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           `https://exercisedb.p.rapidapi.com/exercises/bodyPart/${bodyPart}`,
           exerciseOptions
         );
-      }
-
-      if (Array.isArray(exercisesData)) {
-        setExercises(exercisesData);
-      } else {
-        console.error("Fetched data is not an array", exercisesData);
-      }
-    };
+    
+        if (Array.isArray(exercisesData)) {
+          setExercises(exercisesData);
+        } else {
+          console.error("Fetched data is not an array", exercisesData);
+        }
+      };
     fetchExercisesData();
   }, [bodyPart, setExercises]);
   return (

@@ -8,12 +8,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
-  const indexOfLastExercise = currentPage * exercisesPerPage;
-  const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercises.slice(
-    indexOfFirstExercise,
-    indexOfLastExercise
-  );
+  // Veriyi kontrol et, array olup olmadığını kontrol et
+  const currentExercises = Array.isArray(exercises)
+    ? exercises.slice(
+        (currentPage - 1) * exercisesPerPage,
+        currentPage * exercisesPerPage
+      )
+    : [];
+
   const paginate = (e, value) => {
     setCurrentPage(value);
     window.scrollTo({ top: 1800, behavior: "smooth" });
@@ -34,15 +36,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
-
-      if (Array.isArray(exercisesData)) {
-        setExercises(exercisesData);
-      } else {
-        console.error("Fetched data is not an array", exercisesData);
-      }
+      setExercises(exercisesData);
     };
     fetchExercisesData();
   }, [bodyPart, setExercises]);
+
   return (
     <Box
       id="exercises"
@@ -81,5 +79,3 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
     </Box>
   );
 };
-
-export default Exercises;
