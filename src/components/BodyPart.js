@@ -4,7 +4,7 @@ import iconGymList from "../utils/iconGymList";
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
   const iconName = item.toLowerCase().replace(/\s/g, "");
-  // Dinamik olarak iconGymList nesnesinden ikonu alıyoruz
+  // We dynamically get the relevant icon from the iconGymList object
   const iconPath = iconGymList[iconName] || iconGymList.all;
   return (
     <Stack

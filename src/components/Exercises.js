@@ -7,13 +7,14 @@ import ExerciseCard from "./ExerciseCard";
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
-
+  // Calculate the exercises shown per page
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
   const currentExercises = exercises.slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );
+  // Page change function
   const paginate = (e, value) => {
     setCurrentPage(value);
     window.scrollTo({ top: 1800, behavior: "smooth" });
@@ -22,7 +23,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   useEffect(() => {
     const fetchExercisesData = async () => {
       let exercisesData = [];
-
+      // All exercises or exercises by selected bodyPart are pulled
       if (bodyPart === "all") {
         exercisesData = await fetchData(
           "https://exercisedb.p.rapidapi.com/exercises?limit=1000",
@@ -34,7 +35,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
           exerciseOptions
         );
       }
-
+      // Verilerin geçerli bir dizi olduğundan emin olunuyor
       if (Array.isArray(exercisesData)) {
         setExercises(exercisesData);
       } else {
@@ -60,11 +61,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
         flexWrap={"wrap"}
         justifyContent={"center"}
       >
+        {/* Egzersizleri listele */}
         {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise={exercise} />
         ))}
       </Stack>
-
+      {/* Pagination, show if number of exercises is more than 9 */}
       <Stack mt="100px" alignItems={"center"}>
         {exercises.length > 9 && (
           <Pagination

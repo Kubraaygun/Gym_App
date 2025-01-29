@@ -4,9 +4,11 @@ import { Button, Stack, Typography } from "@mui/material";
 
 const ExerciseCard = ({ exercise }) => {
   return (
+    // When the exercise card is clicked, it will redirect to the detail page
     <Link className="exercise-card" to={`/exercise/${exercise.id}`}>
       <img src={exercise.gifUrl} alt="exercise.name" loading="lazy" />
       <Stack direction={"row"}>
+        {/* Exercise body part button */}
         <Button
           sx={{
             ml: "21px",
@@ -19,6 +21,7 @@ const ExerciseCard = ({ exercise }) => {
         >
           {exercise.bodyPart}
         </Button>
+        {/* Exercise target button */}
         <Button
           sx={{
             ml: "21px",
@@ -32,6 +35,7 @@ const ExerciseCard = ({ exercise }) => {
           {exercise.target}
         </Button>
       </Stack>
+      {/* Exercise name */}
       <Typography
         ml="21px"
         color="#000"

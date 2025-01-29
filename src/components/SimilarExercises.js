@@ -6,6 +6,7 @@ import Loader from "./Loader";
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
   return (
     <Box sx={{ mt: { lg: "100px", xs: "0" } }}>
+      {/* Muscle group exercises title */}
       <Typography
         sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
         fontWeight={700}
@@ -18,6 +19,8 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </span>{" "}
         Hedef Alan Egzersizler
       </Typography>
+
+      {/* Kas grubu egzersizleri listesi */}
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {targetMuscleExercises.length ? (
           <HorizontalScrollBar data={targetMuscleExercises} />
@@ -25,7 +28,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
           <Loader />
         )}
       </Stack>
-
+      {/* Exercises with equipment title */}
       <Typography
         sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
         fontWeight={700}
@@ -39,6 +42,7 @@ const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
         </span>{" "}
         Kullanan Egzersizler
       </Typography>
+      {/* List of exercises with equipment */}
       <Stack direction="row" sx={{ p: "2", position: "relative" }}>
         {equipmentExercises.length ? (
           <HorizontalScrollBar data={equipmentExercises} />

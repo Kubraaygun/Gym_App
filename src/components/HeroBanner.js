@@ -3,6 +3,7 @@ import { Box, Typography, Button, useMediaQuery } from "@mui/material";
 import HeroBannerImage from "../assets/images/banner.jpg";
 
 const HeroBanner = () => {
+  // Check styles based on screen size
   const isSmallScreen = useMediaQuery("(max-width:1200px)");
   const isLargeScreen = useMediaQuery("(min-width:2000px)");
 

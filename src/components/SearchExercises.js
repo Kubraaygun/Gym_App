@@ -24,6 +24,8 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         "https://exercisedb.p.rapidapi.com/exercises?limit=1000",
         exerciseOptions
       );
+
+      // Filter by search criteria
       const searchedExercises = exercisesData.filter(
         (item) =>
           item.name.toLowerCase().includes(search) ||
@@ -38,6 +40,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
   };
   return (
     <Stack alignItems="center" mt="37px" justifyContent="center" p="20px">
+      {/* Title */}
       <Typography
         fontWeight={700}
         sx={{ fontSize: { lg: "44px", sx: "30px" } }}
@@ -48,6 +51,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         Bilmeniz Gereken <br /> Harika Egzersizler
       </Typography>
       <Box position="relative" mb="72px">
+        {/* Search box */}
         <TextField
           sx={{
             input: { fontWeight: "700", border: "none", borderRadius: "4px" },
@@ -78,7 +82,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
           Ara
         </Button>
       </Box>
-
+      {/* BodyParts bölgesi */}
       <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
         <HorizontalScrollBar
           data={bodyParts}

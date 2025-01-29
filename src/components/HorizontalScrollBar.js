@@ -25,6 +25,7 @@ const RightArrow = () => {
     </Typography>
   );
 };
+// Horizontal scrollbar component
 
 const HorizontalScrollBar = ({ data, isBodyParts, bodyPart, setBodyPart }) => {
   if (!data || !Array.isArray(data)) {
@@ -32,7 +33,7 @@ const HorizontalScrollBar = ({ data, isBodyParts, bodyPart, setBodyPart }) => {
       "HorizontalScrollBar bileşenine yanlış veri gönderildi:",
       data
     );
-    return null; // Hata durumunda bileşeni render etme
+    return null;
   }
   return (
     <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>

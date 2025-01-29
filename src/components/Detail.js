@@ -33,11 +33,13 @@ const Detail = ({ exerciseDetail }) => {
         margin: "0 auto",
       }}
     >
+      {/* Exercise GIF */}
       <img src={gifUrl} alt={name} loading="lazy" className="detail-image" />
       <Stack sx={{ gap: { lg: "35px", xs: "20px" } }}>
         <Typography style={{ textTransform: "capitalize" }} variant="h3">
           {name}
         </Typography>
+        {/* Exercise description*/}
         <Typography variant="h6">
           Egzersiz sizi güçlü tutar. {``}
           <br /> <span style={{ textTransform: "capitalize" }}>{name}</span> En
@@ -45,6 +47,8 @@ const Detail = ({ exerciseDetail }) => {
           <br /> Bu sizin geliştirmenize yardımcı olacaktır. <br /> Ruh halinizi
           düzeltin ve enerji kazanın.
         </Typography>
+
+        {/* We add extra details with map */}
         {extraDetail?.map((item) => (
           <Stack
             key={item.name}
