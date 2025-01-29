@@ -1,26 +1,35 @@
 import React from "react";
-import { Box, Stack, Typography, Button } from "@mui/material";
-import HeroBannerImage from "../assets/images/banner.png";
+import { Box, Typography, Button, useMediaQuery } from "@mui/material";
+import HeroBannerImage from "../assets/images/banner.jpg";
 
 const HeroBanner = () => {
+  const isSmallScreen = useMediaQuery("(max-width:1200px)");
+  const isLargeScreen = useMediaQuery("(min-width:2000px)");
+
   return (
     <Box
-      sx={{ mt: { lg: "212px", sx: "70px" }, ml: { sm: "50px" } }}
-      position="relative"
-      p="20px"
+      sx={{
+        mt: { lg: "212px", xs: "70px" },
+        p: "20px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: isSmallScreen || isLargeScreen ? "center" : "flex-start",
+        textAlign: isSmallScreen || isLargeScreen ? "center" : "left",
+        ml: isSmallScreen || isLargeScreen ? "0px" : { sm: "50px" },
+      }}
     >
       <Typography color="#FF2625" fontWeight="600" fontSize="26px">
         Fitness Salonu
       </Typography>
       <Typography
         fontWeight={700}
-        sx={{ fontSize: { lg: "44px", sx: "40px" } }}
+        sx={{ fontSize: { lg: "44px", xs: "40px" } }}
         mb="23px"
         mt="30px"
         color={"#3A1212"}
         fontFamily="Alegreya"
       >
-        Gülümse ve <br /> ve Tekrar Et
+        Gülümse ve <br /> Tekrar Et
       </Typography>
       <Typography
         fontSize="22px"
@@ -46,7 +55,17 @@ const HeroBanner = () => {
       >
         Egzersiz
       </Typography>
-      <img src={HeroBannerImage} alt="banner" className="hero-banner-img" />
+      <img
+        src={HeroBannerImage}
+        alt="banner"
+        className="hero-banner-img"
+        style={{
+          borderBottomLeftRadius: "80px",
+          height: "97%",
+          width: "100%",
+          maxWidth: "600px",
+        }}
+      />
     </Box>
   );
 };
