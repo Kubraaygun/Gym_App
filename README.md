@@ -1,71 +1,27 @@
-# Getting Started with Create React App
+## Spor Uygulama Projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bu proje, kullanıcılara farklı egzersizleri arama, görüntüleme ve detaylı bilgilerini alma imkânı sağlayan bir React Frontend uygulamasıdır.
 
-## Available Scripts
+# Proje Amacı
 
-In the project directory, you can run:
+Projenin temel amacı, kullanıcıların egzersizleri kolayca keşfetmelerini ve egzersizlerin nasıl yapıldığını daha iyi anlamalarını sağlamaktır. Kullanıcılar aradıkları egzersizleri filtreleyebilir, detaylı bilgi alabilir ve egzersizlerle ilgili video içerikleri izleyebilirler.
 
-### `npm start`
+Projede React ve RapidAPI gibi modern teknolojiler kullanılarak, kullanıcı dostu bir arayüz ve hızlı veri erişimi sağlanmıştır. Ayrıca, YouTube API ile videoların entegrasyonu, kullanıcıların egzersizleri daha iyi öğrenmesini ve doğru şekilde uygulamalarını hedeflemiştir.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Özellikler
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Egzersiz Arama ve Filtreleme:** Kullanıcılar, egzersizleri isim, hedef kas grubu, ekipman türü ve diğer kriterlere göre arayabilir.
 
-### `npm test`
+- **Egzersiz Detay Sayfası:** Her egzersiz için detaylı bilgiler (video, açıklama, hedef kas grubu, ekipman) sağlanır.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Benzer Egzersizler:** Kullanıcılar, her egzersiz için benzer egzersizleri ve aynı ekipmanla yapılan egzersizleri görebilirler.
 
-### `npm run build`
+- **Responsive Tasarım:** Uygulama, mobil cihazlarda da uyumlu çalışacak şekilde tasarlanmıştır.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Kullanılan Teknolojiler
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# Gym_App
+- React
+- Mateirl UI
+- React Router DOM
+- RapidAPI
+- Youtube API
