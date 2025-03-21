@@ -1,6 +1,6 @@
-# Spor Uygulama Projesi
+# Sports Application Project
 
-Bu proje, kullanıcılara farklı egzersizleri arama, görüntüleme ve detaylı bilgilerini alma imkânı sağlayan bir React Frontend uygulamasıdır.
+This project is a React Frontend application that allows you to search, view and get detailed information about different exercises.
 
 ## Proje Amacı
 
